@@ -557,6 +557,25 @@
             top: -20px;
             font-family: Georgia, serif;
         }
+
+        /* Target only the second <p> that lives directly inside a blockquote */
+        /*blockquote p:nth-of-type(n+2) {
+            margin-top: 0;               
+            margin-bottom: -0.3em;        
+            text-indent: 2em;            
+            display: block;
+        }*/
+
+/*        blockquote::after {
+            content: '"';
+            font-size: 120px;
+            color: var(--plasma-purple);
+            opacity: 0.15;
+            position: absolute;
+            right: -20px;
+            bottom: -40px;
+            font-family: Georgia, serif;
+        }*/
         
         .quote-attribution {
             font-size: 17px;
@@ -958,7 +977,7 @@
           #vulnerability_care,
           #institutional_coping,
           #institutional_coping_care,
-          #individual_caregiver_coping
+          #individual_caregiver_coping,
           #individual_teacher_coping        { display: none; }
         }
 
@@ -1082,7 +1101,7 @@
             <div class="viz-container wide portrait-grid-container">
                 <div class="portrait-grid" id="portraitGrid"></div>
             </div>
-            <p class="viz-caption">Portraits of a subset of the 101 survey participants in St. Martin, by Sahar Thomson/Feelin' Hot</p>
+            <p class="viz-caption">Portraits of St. Martin survey participants, by Sahar Thomson/Feelin' Hot</p>
         </div>
     </section>
 
@@ -1096,6 +1115,8 @@
             </div>
             <div class="embed-float">
                 <div class="flourish-embed" data-src="story/3485048"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/story/3485048/thumbnail" width="100%" alt="visualization" /></noscript></div>
+               <!-- <p class="viz-caption">Survey participants by type and interview location</p> -->
+
             </div>
         </div>
     </section>
@@ -1103,9 +1124,9 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                The heat that we have on St. Martin now is not the heat that we had here 15 years ago, or maybe even even 10 years ago.<br><br>Formerly, the heat would start around noon and persons would avoid going out for long periods of time and being exposed to the sun.<br><br>Now, it's hot from nine o'clock in the morning - the sun is already scorching. The climate has really, really changed.
+                The heat that we have on St. Martin now is not the heat that we had here 15 years ago, or maybe even even 10 years ago. Formerly, the heat would start around noon and persons would avoid going out for long periods of time and being exposed to the sun. Now, it's hot from nine o'clock in the morning - the sun is already scorching. The climate has really, really changed.
                 </blockquote>
-                <p class="quote-attribution">— Elder with a chronic condition exacerbated by heat</p>
+                <p class="quote-attribution">— Elder</p>
             </div>
         </div>
     </section>
@@ -1116,7 +1137,7 @@
     <section class="content-section">
         <div class="container">
             <div class="key-finding fade-in">
-                <p><span class="percentage">43%</span> of all respondents described either experiencing heat stress symptoms or witnessing symptoms in their students or patients</p>
+                <p><span class="percentage">43%</span> of respondents described experiencing heat stress symptoms or witnessing symptoms in their students or patients</p>
             </div>
         </div>
     </section>
@@ -1136,20 +1157,23 @@
                 <button class="carousel-arrow prev" data-carousel="heat-stress" data-direction="-1">‹</button>
                 <button class="carousel-arrow next" data-carousel="heat-stress" data-direction="1">›</button>
             </div>
+            <!-- <p class="viz-caption">Analysis of survey responses for symptoms of heat stress</p> -->
         </div>
+    </section>
 
+    <section class="content-section">
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
                 In St. Martin, when it's hot - it's <i>really</i> hot, like the sun don't play and it's making you sick, like you want to sometimes throw up.
                 </blockquote>
-                <p class="quote-attribution">— Youth participant</p>
+                <p class="quote-attribution">— Youth participant in the 18-24 group</p>
             </div>
             <div class="quote-block fade-in">
                 <blockquote>
-                    When you fall asleep and the power goes out - the fans stop, the heat just creeps in and you can't fall back asleep...Sometimes I will get dizzy, the heat will just make me feel like I want to fall down.
+                    When you fall asleep and the power goes out - the fans stop, the heat just creeps in and you can't fall back asleep.<br><br>I mostly walk...sometimes I will get dizzy, the heat will just make me feel like I want to fall down.
                 </blockquote>
-                <p class="quote-attribution">— Outdoor worker and college student</p>
+                <p class="quote-attribution">— Outdoor worker and youth participant in the 13-17 group </p>
             </div>
         </div>
     </section>
@@ -1165,7 +1189,7 @@
     <section class="content-section">
         <div class="container">
             <div class="key-finding fade-in">
-                <p><span class="percentage">71%</span> of respondents who work at least part-time said that heat adversely impacted them on the job</p>
+                <p><span class="percentage">61%</span> of working respondents said that heat adversely impacted them on the job</p>
             </div>
         </div>
     </section>
@@ -1175,9 +1199,9 @@
         <div class="container">
         <div class="quote-block fade-in">
             <blockquote>
-                The two hours of class can be extremely long when it's hot...It's over-stimulating having to cater to all of these needs while also trying to cater to yourself. You don't want to, say it or show it, because we always put the children first, but it comes out eventually.
+                The two hours of class can be extremely long when it's hot. It's over-stimulating,  having to cater to all of these needs while also trying to cater to yourself. You don't want to say it or show it, because we always put the children first, but it comes out eventually.
             </blockquote>
-            <p class="quote-attribution">— Elementary school teacher</p>
+            <p class="quote-attribution">— Teacher</p>
         </div>
     </div>
     </section>    
@@ -1193,7 +1217,7 @@
                    src="assets/images_mobile/job_impact_beeswarm.png"
                    alt="Heat impact on jobs">  
             </div>
-            <!-- <p class="viz-caption">Survey responses at a glance</p> -->
+            <!-- <p class="viz-caption">Individual survey responses</p> -->
     </section>
 
     <section class="content-section">
@@ -1215,7 +1239,6 @@
                 src="assets/images_mobile/packed_circles.png" 
                 alt="Extreme heat impacts on work">
         </div>
-        <!-- <p class="viz-caption">Survey responses by type</p> -->
     </section>
 
     <section>
@@ -1235,6 +1258,7 @@
                      alt="Exacerbating factors for respondents reporting adverse impacts">
             </div>
         </div>
+    <!-- <p class="viz-caption">Caption: Survey responses by type of job impact and the factors that alleviated or exaggerated the impact of heat at work, according to participants</p> -->
     </section>
 
     <section class="content-section">
@@ -1260,74 +1284,94 @@
         <div class="centered-content clearfix">
             <div class="subsection">
                 <!-- <h3>Schools</h3> -->
-                <p>Interviews with educators provide insights on the systemic impact of heat in schools, involving questions on learning conditions; disparities in vulnerability among student populations; the affect of heat on students' performance; and coping mechanisms used to mitigate its impact. 
-                <!-- While all 22 teachers said that their classroom had a/c, more than 30% noted that the a/c wasn't sufficient to cool their class. </p>
-                <p> -->
-                Two groups of youth participants also responded to surveys directly: A teen group, ages 13-17, and a young adult group, ages 18-24.</p>
+                <p>Interviews with educators focused on the systemic impact of heat in schools, while questions posed directly to youth involved their experiences with heat in various settings. </p>
+                Two dozen educators, including 22 teachers and 2 coaches, answered questions on learning conditions; disparities in vulnerability among student populations; the affect of heat on students' performance; and coping mechanisms used to mitigate its impact. </p>
+                <!-- <p>While all 22 teachers said that their classroom had a/c, more than 30% of them noted that their units weren't effective in cooling their classes. </p> -->
             </div>
         </div>
+    </section>
 
-            <div class="key-finding fade-in">
-                <p><span class="percentage">88%</span> of educators said heat had an adverse impact on students' attention or peformance</p>
-            </div>
-            <div class="container">
-                <div class="viz-container wide fade-in">
-                    <div id="student_impacts" class="plotly-graph-div"> </div>
-                    <img id="student_impacts_static" class="static-image"
-                        src="assets/images_mobile/student_impacts.png"
-                        alt="Heat impact on students">
+    <section class="content-section">
+        <div class="container">
+        <div class="key-finding fade-in">
+            <p><span class="percentage">88%</span> of educators said heat adversely impacted students' attention or peformance</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="viz-container wide fade-in">
+                <div id="student_impacts" class="plotly-graph-div"> </div>
+                <img id="student_impacts_static" class="static-image"
+                    src="assets/images_mobile/student_impacts.png"
+                    alt="Heat impact on students">
                 </div>
             </div>
-            
+        </section>
+
+    <section class="content-section">
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
                     There is a slight heat wave going on on the island right now. And, I have had situations in the classes where the heat does get a bit overwhelming at times.<br><br>Some of the children are able to stand the heat, but some of them - oftentimes, while you're teaching, they lay down. Not because they're being unresponsive, but just because of the heat. They might have a headache. They might not be feeling well throughout the heat in the class. So, that has been noticeable in classes the last couple of days.
                 </blockquote>
-                <p class="quote-attribution">— Private elementary school teacher</p>
+                <p class="quote-attribution">— Teacher</p>
             </div>
         </div>
+    </section>
 
+    <section class="content-section">
             <div class="viz-container wide fade-in">    
                 <div id="educator_conditions" class="plotly-graph-div"></div>
                 <img id="educator_conditions_static" class="static-image" 
                         src="assets/images_mobile/educators_conditions.png" 
                         alt="Indoor classroom conditions">
             </div>
+    </section>
+
+    <section class="content-section">
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
+                    My classroom has two air conditioners, however presently only one of them works, so the class is usually hot.<br><br>The children are vocal, they'll complain: 'Teacher, it's hot'. 'Teacher, my hands are sweaty and I have to write all of these notes'. 'It's hot, I cannot do this', or 'I feel tired, I feel weak.'<br><br>And, then they drink a lot of water; and when they drink a lot of water, they need to use the bathroom, so there's a lot of traffic, a lot of movement. And I am not going to tell a child, 'You can't drink water', knowing how hot it is.
+                </blockquote>
+                    <p class="quote-attribution">— Teacher</p>
+            </div>
+<!--         </div>
+    </section>
+    <section class="content-section">
+        <div class="container"> -->
+            <div class="quote-block fade-in">            
+                <blockquote>
                     We have realized the importance of the air conditioners, but with air conditioning also comes the bill, so we are trying to balance both.
                 </blockquote>
-                <p class="quote-attribution">— Private elementary school teacher</p>
+                <p class="quote-attribution">— Teacher</p>
             </div>
         </div>
-        </section>
+    </section>
 
-        <section>
+    <section class="content-section">
             <!-- FIXED: Coping Mechanisms Carousel -->
             <div class="carousel-container fade-in" data-carousel="coping">
                 <div class="carousel-slides ratio43">
                     <div class="carousel-slide ratio43 active">
                         <div id="vulnerability" 
-                        class="plotly-graph-div" >
-                        </div>
+                        class="plotly-graph-div" ></div>
                         <img id="vulnerability_static" class="static-image"
                            src="assets/images_mobile/vulnerability_static.png"
                            alt="Multiple student and patient populations are vulnerable to the impact of heat">
                     </div>
                     <div class="carousel-slide ratio43">
                         <div id="institutional_coping" 
-                        class="plotly-graph-div" >
-                        </div>
+                        class="plotly-graph-div" ></div>
                         <img id="institutional_coping_static" class="static-image"
                            src="assets/images_mobile/institutional_coping_static.png"
                            alt="Schools and care centers use multiple coping mechanisms to attempt to mitigate heat">
                     </div>
                     <div class="carousel-slide ratio43">
                         <div id="individual_teacher_coping" 
-                        class="plotly-graph-div" >
-                        </div>
+                        class="plotly-graph-div" ></div>
                         <img id="individual_teacher_coping_static" class="static-image"
                            src="assets/images_mobile/individual_teacher_coping_static.png"
                            alt="Teachers and caregivers rely on various strategies to attempt to mitigate heat"> 
@@ -1337,20 +1381,29 @@
                 <button class="carousel-arrow next" data-carousel="coping" data-direction="1">›</button>
                 <!-- <p class="viz-caption">Click and hover on the legend and charts to explore the responses</p> -->
             </div>
-        <!-- </section> -->
+<!--         </section>
 
-    <!-- <section> -->
+    <section class="content-section"> -->
         <div class="centered-content clearfix">
             <div class="subsection">
+                <h3>Youth perspectives</h3>
+                <p>More than two dozen teens and young adults answered survey questions, providing insights on their experiences with heat at home, while commuting and, as applicable, at work. Participants fell in either a teen group, ages 13-17, or a young adult group, ages 18-24.</p>
+            </div>
+        </div>
+<!--     </section>
+
+    <section class="content-section"> -->
+        <div class="centered-content clearfix">
             <div class="key-finding fade-in">
-                <p style="margin-top: 1rem;"><span class="percentage">82%</span> of youth survey responses indicated sleep issues due to heat</p>
-                <p style="margin-top: 1rem;"><span class="percentage">72%</span> of youth survey responses entailed a household health impact due to heat</p>
+                <p style="margin-top: 1rem;"><span class="percentage">82%</span> of youth responses indicated sleep issues due to heat</p>
+                <p style="margin-top: 1rem;"><span class="percentage">72%</span> of youth responses entailed a household health impact due to heat</p>
                 <p style="margin-top: 1rem;"><span class="percentage">38%</span> of youth survey responses indicated a reliance on transportion modes that lack cooling</p>
             </div>
         </div>
-    </div>
-</section>
+    <!-- </section>
 
+
+    <section class="content-section"> -->
             <div class="carousel-container fade-in" data-carousel="youth_combined">
                 <div class="carousel-slides">
                     <div class="carousel-slide active">
@@ -1382,12 +1435,13 @@
                 <button class="carousel-arrow next" data-carousel="coping" data-direction="1">›</button>
                 <!-- <p class="viz-caption">Click and hover on the legend and charts to explore the responses</p> -->
             </div>
-            
-        </div>
+<!--         </section>
+
+    <section class="content-section"> -->
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                    I immediately wake up when the A/C goes off...It gives me a lot of headaches...I walk with my mini-fan everywhere I go...At different stop points, I think we should have more trees, so you can rest under the shade
+                    I immediately wake up when the A/C goes off. The heat gives me a lot of headaches.<br><br>I walk with my mini-fan everywhere I go. At different stop points, I think we should have more trees, so you can rest under the shade.
                 </blockquote>
                 <p class="quote-attribution">— Youth participant in the 13-17 group</p>
             </div>
@@ -1395,7 +1449,7 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                    I live on the concrete, so the heat is terrible...Sometimes the heat is so bad that even with the A/C on, I wake up in sweat.
+                    I live on the concrete, so the heat is terrible. Sometimes the heat is so bad that even with the A/C on, I wake up in sweat.
                 </blockquote>
                 <p class="quote-attribution">— Youth participant in the 18-24 group</p>
             </div>
@@ -1431,13 +1485,13 @@
             </div>
              <div class="quote-block fade-in">
                 <blockquote>
-                    I'm asthmatic so it affects me; I will always be able to relate to a client that is saying that they feel overheated, because that's how I feel sometimes. We have to really keep an eye on them, because they are not always the most mobile clients and also not the most vocal.
+                    I'm asthmatic, so the heat affects me. I will always be able to relate to a client that is saying that they feel overheated, because that's how I feel sometimes. We have to really keep an eye on them, because they are not always the most mobile clients and also not the most vocal.
                 </blockquote>
                 <p class="quote-attribution">— Nursing home caregiver</p>
             </div>
             <div class="quote-block fade-in">
                 <blockquote>
-                    You can advise [clients to use A/C], but it doesn't mean that it will be carried out, or that it's even possible financially. Your hands are tied at times, given the situation that you would encounter in the home...They deserve better, but they just can't afford it.
+                    You can advise [clients to use A/C], but it doesn't mean that it will be carried out, or that it's even possible financially. Your hands are tied at times, given the situation that you would encounter in the home. They deserve better, but they just can't afford it.
                 </blockquote>
                 <p class="quote-attribution">— Caregiver with home-based clients</p>
             </div>
@@ -1519,11 +1573,11 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                    The situation on the island where safety is a challenge, in my opinion, is contributing towards the discomfort of heat. You gotta make sure you close the door because you never know who's walking up the road. Whereas in some places, that is not the case - you can leave your whole house open.<br><br>Economic situations and circumstances has forced us in this generation to have to live more carefully.
+                    The situation on the island where safety is a challenge, in my opinion, is contributing towards the discomfort of heat. You gotta make sure you close the door, because you never know who's walking up the road. Whereas in some places, that is not the case - you can leave your whole house open. Economic situations and circumstances has forced us in this generation to have to live more carefully.
                 </blockquote>
                 <p class="quote-attribution">— Elder</p>
                 <blockquote>
-                    I don't think I would make it if I had to sleep with a fan. I'm serious.
+                    I don't think I would make it if I had to sleep with only a fan. I'm serious.
                 </blockquote>
                 <p class="quote-attribution">— Elder</p>
             </div>
@@ -1537,19 +1591,19 @@
     </div>
 
     <section class="content-section">
-        <!-- <div class="container">
-            <div class="centered-content clearfix">
-            <p>Increased access to personal a/c; shade; and affordable/renewable energy were the top themes to emerge from among participants' suggested solutions. <br><br>Shade in various forms -- from the creation of bus shelters to the preservation or planting of trees -- was the most predominant type of solution.</p>
+        <div class="centered-content clearfix">
+            <div class="subsection">
+                <p>Each of the survey participants were invited to weigh in on solutions needed to mitigate the impact of heat on St. Martin. The vast majority of respondents, 84%, suggested at least one intervention to help with the heat. Among a range of specific proposals: Increased access to personal a/c; shade in various forms; and affordable/renewable energy were the most prevalent themes to emerge.</p>
             </div>
-        </div> -->
-    <!-- </section> -->
+        </div>
+    </section>
 
-    <!-- <section class="content-section"> -->
+    <section class="content-section">
         <div class="container">
             <div class="key-finding fade-in">
                 <p style="margin-top: 1rem;"><span class="percentage">24%</span> of suggested solutions involved increasing or maintaining shade, from the creation of bus shelters to the preservation of trees</p>
-                <p style="margin-top: 1rem;"><span class="percentage">20%</span> sought increased access to personal a/c</p>
-                <p style="margin-top: 1rem;"><span class="percentage">14%</span> entailed requests for cleaner and/or cheaper energy </p>
+                <p style="margin-top: 1rem;"><span class="percentage">20%</span> of suggested solutions sought increased access to personal a/c</p>
+                <p style="margin-top: 1rem;"><span class="percentage">14%</span> of suggested solutions entailed requests for cleaner and/or cheaper energy </p>
             </div>
         </div>
     </section>
@@ -1557,9 +1611,9 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                    There's a lot of places that don't have any shade at all...you're traveling in spaces where you want to take a break, but you can't take a break - there's no shade.
+                    There's a lot of places that don't have any shade at all. You're traveling in spaces where you want to take a break, but you can't take a break - there's no shade.
                 </blockquote>
-                <p class="quote-attribution">— College student</p>
+                <p class="quote-attribution">— Youth participant in the 18-24 group</p>
             </div>
         </div>
     </section>
@@ -1578,7 +1632,7 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                Solar could help everybody have A/C in the home, then they wouldn't have to pay the electricity company all these tons of money.
+                Solar could help everybody have A/C in the home. Then they wouldn't have to pay the electricity company all these tons of money.
                 </blockquote>
                 <p class="quote-attribution">— Elder</p>
             </div>
@@ -1599,7 +1653,7 @@
                 <blockquote>
                     Maybe the government could take the initiative to add some cooling stations around the island, where they know that people are standing for a long period of time, for example, bus stops.
                 </blockquote>
-                <p class="quote-attribution">— Youth participant</p>
+                <p class="quote-attribution">— Youth participant in the 18-24 group</p>
             </div>
         </div>
         <div class="container">
@@ -1616,20 +1670,22 @@
         <div class="container">
             <div class="quote-block fade-in">
                 <blockquote>
-                    What what we are not doing enough is informing people - the elderly and in the population in general, but in particular children - about the dangers of heat and heat waves.<br><br>Hopefully out of this comes some kind of program to inform people of the dangers of the heat, because it's becoming unbearable. And not everybody has the luxury of having an air conditioner.
+                    What what we are not doing enough is informing people - the elderly and the population in general, but in particular children - about the dangers of heat and heat waves.<br><br>Hopefully out of this comes some kind of program to inform people of the dangers of the heat, because it's becoming unbearable. And not everybody has the luxury of having an air conditioner.
                 </blockquote>
                 <p class="quote-attribution">— Elder</p>
             </div>
         </div>
     </section>
 
-            
-
-            <!-- <div class="viz-container fade-in">
-                <div id="parallel"
-                class="plotly-graph-div">
-                </div>      
-            </div> -->
+    <section class="content-section">
+        <div class="container">
+            <div class="quote-block fade-in">
+                <blockquote>
+                    I want people to acknowledge climate change. I don't know if people aren't educated or they don't care. The proof is there. But people are not acknowledging it. And because people are not acknowledging it, they don't want to take the steps necessary to help us. It's getting worse.
+                </blockquote>
+                <p class="quote-attribution">— Teacher</p>
+            </div>
+        </div>
     </section>
 
 
@@ -1661,11 +1717,7 @@
         <!-- </div> -->
         <!-- <div class="centered-content clearfix"> -->
                 <div class="subsection">
-                    <p>The surveyor recorded interviews with participants and inputted their responses to survey questions as codes. To validate the codes, an analyst listened to each recorded interview at least twice. Using the Python programming language: 
-                    <!-- Group interviews were diarized to extract and validate distinct survey responses.  -->
-                    Audio files were transcribed and analyzed for symptoms of heat stress. Participants' locations and group type were analyzed and visualized. 
-                    <!-- With the exception of a single, sentiment-related question, each set of responses to each survey question were analyzed by group type, count and percentage. A sentiment analysis, calibrated to challenges related to heat, was performed on educators' descriptions of summertime teaching experiences, per the surveyor's notes.  -->
-                    Pre-trained AI models were incorporated in processing the audio files. Transcription excerpts included on the site were edited for length and clarity.</p>
+                    <p>The surveyor recorded the interviews and inputted participants' responses as codes. An analyst listened to each interview at least twice, in order to validate the data; and recorded perceived exacerbating and mitigating factors noted by participants in response to survey questions. Using the Python programming language: Each set of responses to each survey question were analyzed and visualized by group type, count and percentage; along with participants' locations. The audio files were transcribed, with the assistance of a pre-trained AI model, and analyzed for symptoms of heat stress. Transcript excerpts on this site have been edited for length and clarity.</p>
                 </div>
 
                 <div style="text-align: center; margin: 3rem 0; clear: both;">
@@ -1704,7 +1756,7 @@
 
                         <p><strong>Philipsburg bus:</strong> Photo by Paul Sableman / <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" style="color: var(--plasma-purple);">CC BY 2.0<a> / <a href="https://commons.wikimedia.org/wiki/File:Philipsburg,_St._Martin_%2816276741515%29.jpg#/media/File:Philipsburg,_St._Martin_%2816276741515%29.jpg" target="_blank" style="color: var(--plasma-purple);">Wikimedia Commons</a>
 
-                         <p><i>All photos used without modification</i></p>
+                         <p><i>All photos have been optimized for the web and otherwise used without modification</i></p>
                     </div>
                 </div>
             </div>
@@ -1979,8 +2031,222 @@
     <!--==================== PLOTLY VISUALIZATIONS ====================-->
 
 <!-- packed circles -->
-    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="packed_circles" class="plotly-graph-div" style="height:1100px; width:1100px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("packed_circles")) {                    Plotly.newPlot(                        "packed_circles",                        [{"hoverinfo":"text","hovertext":"\u003cb\u003eWorking Respondents\u003c\u002fb\u003e\u003cbr\u003eTotal: 70 (100.0%)","marker":{"color":"#e0e0e0","line":{"color":"white","width":2},"size":900.0},"mode":"markers","showlegend":false,"x":[0.0],"y":[0.0],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003eNone\u003c\u002fb\u003e\u003cbr\u003eResponses: 28 (29% of all answers)","legendgroup":"None","marker":{"color":"#fdca26","line":{"color":"white","width":2},"size":353.3726689711253},"mode":"markers","name":"None","showlegend":true,"x":[-300.6450320658811],"y":[0.0],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003eAdverse\u003c\u002fb\u003e\u003cbr\u003eResponses: 67 (71% of all answers)","legendgroup":"Adverse","marker":{"color":"#9c179e","line":{"color":"white","width":2},"size":546.6273310288747},"mode":"markers","name":"Adverse","showlegend":true,"x":[194.35496793411892],"y":[0.0],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003edemotivating\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":57.90633020362695},"mode":"markers+text","showlegend":false,"text":"demotivating","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[184.05027571231184],"y":[193.9738852269652],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003elightheaded\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":57.90633020362695},"mode":"markers+text","showlegend":false,"text":"lightheaded","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[-43.51225575297153],"y":[111.32686904952561],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003epre-existing conditions worsened\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":57.90633020362695},"mode":"markers+text","showlegend":false,"text":"pre-existing\u003cbr\u003econditions worsened","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[-39.080340875575445],"y":[-128.7076293369752],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003ereduced productivity\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":57.90633020362695},"mode":"markers+text","showlegend":false,"text":"reduced\u003cbr\u003eproductivity","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[179.0185308343096],"y":[-206.9110668839277],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003ephysical discomfort\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 7 (7% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":153.20574905518512},"mode":"markers+text","showlegend":false,"text":"physical\u003cbr\u003ediscomfort","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[67.3288284401558],"y":[-175.1726964654341],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003emood changes\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 8 (8% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":163.78383504244806},"mode":"markers+text","showlegend":false,"text":"mood\u003cbr\u003echanges","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[65.28672661127214],"y":[166.36873102722126],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003efeeling tired\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 9 (9% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":173.71899061088087},"mode":"markers+text","showlegend":false,"text":"feeling\u003cbr\u003etired","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[1.3597871915308986],"y":[-7.902792770928694],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003enone\u003c\u002fb\u003e\u003cbr\u003eCategory: None\u003cbr\u003eResponses: 28 (29% of all answers)","legendgroup":"None","marker":{"color":"#feeaa8","line":{"color":"white","width":1},"size":353.3726689711253},"mode":"markers+text","showlegend":false,"text":"none","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[-300.6450320658811],"y":[0.0],"type":"scatter"},{"hoverinfo":"text","hovertext":"\u003cb\u003eharder to work\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 39 (41% of all answers)","legendgroup":"Adverse","marker":{"color":"#d7a2d8","line":{"color":"white","width":1},"size":361.6249162162471},"mode":"markers+text","showlegend":false,"text":"harder\u003cbr\u003eto work","textfont":{"color":"#333333","size":9},"textposition":"middle center","x":[295.79893594645125],"y":[-7.902792770928694],"type":"scatter"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"title":{"text":"Is heat making your job more difficult\u002feasier?\u003cbr\u003e\u003csub\u003eResponses among participants who work at least part-time\u003c\u002fsub\u003e","font":{"size":20}},"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12},"xaxis":{"range":[-550.0,550.0],"showgrid":false,"zeroline":false,"visible":false},"yaxis":{"range":[-550.0,550.0],"showgrid":false,"zeroline":false,"visible":false},"margin":{"t":100,"b":40,"l":40,"r":40},"legend":{"title":{"text":"Response type"},"yanchor":"top","y":0.98,"xanchor":"left","x":0.02,"bgcolor":"rgba(255,255,255,0.9)","bordercolor":"gray"},"width":1100,"height":1100,"paper_bgcolor":"white","plot_bgcolor":"white"},                        {"responsive": true, "displayModeBar": true}                    )                };                            </script>
+    <script type="text/javascript">
+    window.PlotlyConfig = { MathJaxConfig: "local" };
+</script>
+<script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<div id="packed_circles" class="plotly-graph-div" style="height: 1100px; width: 1100px"></div>
+<script type="text/javascript">
+    window.PLOTLYENV = window.PLOTLYENV || {};
+    if (document.getElementById("packed_circles")) {
+        Plotly.newPlot(
+            "packed_circles",
+            [
+                {
+                    hoverinfo: "text",
+                    hovertext: "\u003cb\u003eWorking Respondents\u003c\u002fb\u003e\u003cbr\u003eTotal: 70 (100.0%)",
+                    marker: { color: "#e0e0e0", line: { color: "white", width: 2 }, size: 900.0 },
+                    mode: "markers",
+                    showlegend: false,
+                    x: [0.0],
+                    y: [0.0],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext: "\u003cb\u003eNone\u003c\u002fb\u003e\u003cbr\u003eResponses: 28 (29% of all answers)",
+                    legendgroup: "None",
+                    marker: { color: "#fdca26", line: { color: "white", width: 2 }, size: 353.3726689711253 },
+                    mode: "markers",
+                    name: "None",
+                    showlegend: true,
+                    x: [-300.6450320658811],
+                    y: [0.0],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003eAdverse\u003c\u002fb\u003e\u003cbr\u003eResponses: 67 (71% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#9c179e", line: { color: "white", width: 2 }, size: 546.6273310288747 },
+                    mode: "markers",
+                    name: "Adverse",
+                    showlegend: true,
+                    x: [194.35496793411892],
+                    y: [0.0],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003edemotivating\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 57.90633020362695 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "demotivating",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [184.05027571231184],
+                    y: [193.9738852269652],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003elightheaded\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 57.90633020362695 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "lightheaded",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [-43.51225575297153],
+                    y: [111.32686904952561],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003epre-existing conditions worsened\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 57.90633020362695 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "pre-existing\u003cbr\u003econditions<br>worsened",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [-39.080340875575445],
+                    y: [-128.7076293369752],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003ereduced productivity\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 1 (1% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 57.90633020362695 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "reduced\u003cbr\u003eproductivity",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [179.0185308343096],
+                    y: [-206.9110668839277],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003ephysical discomfort\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 7 (7% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 153.20574905518512 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "physical\u003cbr\u003ediscomfort",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [67.3288284401558],
+                    y: [-175.1726964654341],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003emood changes\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 8 (8% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 163.78383504244806 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "mood\u003cbr\u003echanges",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [65.28672661127214],
+                    y: [166.36873102722126],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003efeeling tired\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 9 (9% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 173.71899061088087 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "feeling\u003cbr\u003etired",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [1.3597871915308986],
+                    y: [-7.902792770928694],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003enone\u003c\u002fb\u003e\u003cbr\u003eCategory: None\u003cbr\u003eResponses: 28 (29% of all answers)",
+                    legendgroup: "None",
+                    marker: { color: "#feeaa8", line: { color: "white", width: 1 }, size: 353.3726689711253 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "none",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [-300.6450320658811],
+                    y: [0.0],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "text",
+                    hovertext:
+                        "\u003cb\u003eharder to work\u003c\u002fb\u003e\u003cbr\u003eCategory: Adverse\u003cbr\u003eResponses: 39 (41% of all answers)",
+                    legendgroup: "Adverse",
+                    marker: { color: "#d7a2d8", line: { color: "white", width: 1 }, size: 361.6249162162471 },
+                    mode: "markers+text",
+                    showlegend: false,
+                    text: "harder\u003cbr\u003eto work",
+                    textfont: { color: "#333333", size: 9 },
+                    textposition: "middle center",
+                    x: [295.79893594645125],
+                    y: [-7.902792770928694],
+                    type: "scatter",
+                },
+            ],
+            {
+                template: {
+                    layout: {
+                        colorway: ["#fcd225", "#ffd395", "#f78410", "#d5546e", "#3e049c", "#C03A83", "#a62098"],
+                        font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                    },
+                },
+                title: {
+                    text: "Is heat making your job more difficult\u002feasier?\u003cbr\u003e\u003csub\u003eResponses among participants who work at least part-time\u003c\u002fsub\u003e",
+                    font: { size: 20 },
+                },
+                font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                xaxis: { range: [-550.0, 550.0], showgrid: false, zeroline: false, visible: false },
+                yaxis: { range: [-550.0, 550.0], showgrid: false, zeroline: false, visible: false },
+                margin: { t: 100, b: 40, l: 40, r: 40 },
+                legend: {
+                    title: { text: "Response type" },
+                    yanchor: "top",
+                    y: 0.98,
+                    xanchor: "left",
+                    x: 0.02,
+                    bgcolor: "rgba(255,255,255,0.9)",
+                    bordercolor: "gray",
+                },
+                width: 1100,
+                height: 1100,
+                paper_bgcolor: "white",
+                plot_bgcolor: "white",
+            },
+            { responsive: true, displayModeBar: true }
+        );
+    }
+</script>
+
 
 <!-- sankey_none -->
 <script type="text/javascript">
@@ -2073,8 +2339,97 @@
 
 
 <!-- educator_conditions -->
-        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="educator_conditions" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("educator_conditions")) {                    Plotly.newPlot(                        "educator_conditions",                        [{"customdata":["AC\u003cbr\u003eCount: 22\u003cbr\u003ePercentage: 100%","Fan\u003cbr\u003eCount: 9\u003cbr\u003ePercentage: 41%","Open windows\u003cbr\u003eCount: 4\u003cbr\u003ePercentage: 18%"],"hovertemplate":"%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#3e049c"},"name":"Teachers","x":["AC","Fan","Open windows"],"y":[22,9,4],"type":"bar"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"shapes":[{"line":{"color":"#d5546e","dash":"dash"},"type":"line","x0":0,"x1":1,"xref":"x domain","y0":7,"y1":7,"yref":"y"}],"annotations":[{"font":{"color":"#d5546e","size":12},"showarrow":false,"text":"Number of teachers who said the AC was insufficient","x":1,"xanchor":"right","xref":"x domain","y":7,"yanchor":"top","yref":"y"}],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12},"title":{"font":{"size":18},"text":"What are the teaching conditions as it relates to cooling\u002fheating?\u003cbr\u003e\u003csub\u003eAll responses (n=22)\u003c\u002fsub\u003e","x":0.5,"xanchor":"center"},"xaxis":{"title":{"font":{"size":14},"text":"Indoor cooling method","standoff":30},"tickfont":{"size":12},"categoryorder":"array","categoryarray":["AC","Fan","Open windows"]},"yaxis":{"title":{"text":"Number of responses"},"showgrid":true,"gridcolor":"#e5e5e5"},"legend":{"font":{"size":12},"x":0.98,"y":0.98,"xanchor":"right","yanchor":"top","orientation":"v","bgcolor":"rgba(255, 255, 255, 0.8)","bordercolor":"#999999","borderwidth":1},"margin":{"l":80,"r":80,"t":100,"b":120},"barmode":"stack","plot_bgcolor":"white"},                        {"responsive": true}                    )                };                            </script>
+       <script type="text/javascript">
+    window.PlotlyConfig = { MathJaxConfig: "local" };
+</script>
+<script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<div id="educator_conditions" class="plotly-graph-div" style="height: 100%; width: 100%"></div>
+<script type="text/javascript">
+    window.PLOTLYENV = window.PLOTLYENV || {};
+    if (document.getElementById("educator_conditions")) {
+        Plotly.newPlot(
+            "educator_conditions",
+            [
+                {
+                    customdata: [
+                        "AC\u003cbr\u003eCount: 22\u003cbr\u003ePercentage: 100%",
+                        "Fan\u003cbr\u003eCount: 9\u003cbr\u003ePercentage: 41%",
+                        "Open windows\u003cbr\u003eCount: 4\u003cbr\u003ePercentage: 18%",
+                    ],
+                    hovertemplate: "%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e",
+                    marker: { color: "#3e049c" },
+                    name: "Teachers",
+                    x: ["AC", "Fan", "Open windows"],
+                    y: [22, 9, 4],
+                    type: "bar",
+                },
+            ],
+            {
+                template: {
+                    layout: {
+                        colorway: ["#fcd225", "#ffd395", "#f78410", "#d5546e", "#3e049c", "#C03A83", "#a62098"],
+                        font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                    },
+                },
+                shapes: [
+                    {
+                        line: { color: "#d5546e", dash: "dash" },
+                        type: "line",
+                        x0: 0,
+                        x1: 1,
+                        xref: "x domain",
+                        y0: 7,
+                        y1: 7,
+                        yref: "y",
+                    },
+                ],
+                annotations: [
+                    {
+                        font: { color: "#d5546e", size: 12 },
+                        showarrow: false,
+                        text: "Number of teachers who<br>said the AC was insufficient",
+                        x: 1,
+                        xanchor: "right",
+                        xref: "x domain",
+                        y: 9.8,
+                        yanchor: "top",
+                        yref: "y",
+                    },
+                ],
+                font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                title: {
+                    font: { size: 18 },
+                    text: "What are the teaching conditions as it relates to cooling\u002fheating?",
+                    x: 0.5,
+                    xanchor: "center",
+                },
+                xaxis: {
+                    title: { font: { size: 14 }, text: "Indoor cooling method", standoff: 30 },
+                    tickfont: { size: 12 },
+                    categoryorder: "array",
+                    categoryarray: ["AC", "Fan", "Open windows"],
+                },
+                yaxis: { title: { text: "Number of responses" }, showgrid: true, gridcolor: "#e5e5e5" },
+                legend: {
+                    font: { size: 12 },
+                    x: 0.98,
+                    y: 0.98,
+                    xanchor: "right",
+                    yanchor: "top",
+                    orientation: "v",
+                    bgcolor: "rgba(255, 255, 255, 0.8)",
+                    bordercolor: "#999999",
+                    borderwidth: 1,
+                },
+                margin: { l: 80, r: 80, t: 100, b: 120 },
+                barmode: "stack",
+                plot_bgcolor: "white",
+            },
+            { responsive: true }
+        );
+    }
+</script>
+
 
 <!-- ac effectiveness -->
 <!--         <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
@@ -2393,8 +2748,458 @@
 
 
 <!-- job_impact_beeswarm -->
-<script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="job_impact_beeswarm" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("job_impact_beeswarm")) {                    Plotly.newPlot(                        "job_impact_beeswarm",                        [{"alignmentgroup":"True","boxpoints":"all","customdata":[["harder to work"],["harder to work"],["none"],["harder to work"],["harder to work"],["harder to work"],["harder to work"],["mood changes"],["physical discomfort"],["feeling tired"],["harder to work"],["none"],["harder to work"],["none"],["none"],["none"],["harder to work"],["physical discomfort"],["feeling tired"],["physical discomfort"],["pre-existing conditions worsened"],["physical discomfort"],["harder to work"],["mood changes"],["harder to work"],["harder to work"],["harder to work"],["mood changes"],["harder to work"],["mood changes"],["physical discomfort"],["harder to work"],["mood changes"],["physical discomfort"],["harder to work"],["harder to work"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Caregivers","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#fcd225","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Caregivers","offsetgroup":"Caregivers","orientation":"v","pointpos":0,"showlegend":true,"x":["Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers","Caregivers"],"x0":" ","xaxis":"x","y":[6.065749451653431,5.985330825540492,3.0860635007787316,6.047368326974247,5.902602563493036,6.114149364392821,6.062673528477685,4.068655433266469,1.910747271842131,6.988092625094936,5.968991525815819,3.1024235973236642,6.03452762881936,3.077462787184999,2.9864194077185595,2.9345372932283467,6.013100348883801,1.8953161414650022,7.07863148127822,2.0315994557892956,1.0619410576204897,1.9650862323511684,6.112967525854777,4.094349069117327,6.0668120392977025,5.926713289884472,5.992013040894488,3.890512903788935,5.917029478096212,4.043931748778189,2.058742917417876,6.11220233578421,3.9581980859531565,1.9689103294483685,5.992693394706194,5.925473126180228],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["none"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Chronically ill","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#ffd395","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Chronically ill","offsetgroup":"Chronically ill","orientation":"v","pointpos":0,"showlegend":true,"x":["Chronically ill"],"x0":" ","xaxis":"x","y":[2.9111811612805134],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["physical discomfort"],["none"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Coaches","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#f78410","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Coaches","offsetgroup":"Coaches","orientation":"v","pointpos":0,"showlegend":true,"x":["Coaches","Coaches"],"x0":" ","xaxis":"x","y":[1.994169182294224,2.934458243772212],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["none"],["none"],["none"],["none"],["none"],["none"],["none"],["harder to work"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Elders","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#d5546e","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Elders","offsetgroup":"Elders","orientation":"v","pointpos":0,"showlegend":true,"x":["Elders","Elders","Elders","Elders","Elders","Elders","Elders","Elders"],"x0":" ","xaxis":"x","y":[3.0407553587238025,2.984916460529359,3.079842767053881,3.0480636244805397,2.9549679939316897,3.0797423523348484,3.0731434457992326,5.972994810967242],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["harder to work"],["harder to work"],["none"],["feeling tired"],["harder to work"],["harder to work"],["harder to work"],["harder to work"],["reduced productivity"],["feeling tired"],["harder to work"],["feeling tired"],["harder to work"],["mood changes"],["none"],["feeling tired"],["harder to work"],["none"],["mood changes"],["demotivating"],["harder to work"],["harder to work"],["harder to work"],["harder to work"],["harder to work"],["mood changes"],["feeling tired"],["harder to work"],["harder to work"],["feeling tired"],["harder to work"],["harder to work"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Teachers","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#3e049c","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Teachers","offsetgroup":"Teachers","orientation":"v","pointpos":0,"showlegend":true,"x":["Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers","Teachers"],"x0":" ","xaxis":"x","y":[5.949198744943258,6.043798920953994,2.9135405960662344,6.927977968594026,5.881766944740241,6.068861850600514,6.039564205582088,6.04923969087032,0.0673749674452723,6.990139786129202,6.016497887028694,6.913551279550638,5.907487217648634,4.040416710829713,2.9930630894743517,7.015656665555485,6.063599725779846,3.032332396800142,4.012859056157919,8.014209718578899,5.9529480235350265,5.887396280296305,5.984812173415767,5.931500321476687,5.978046874493913,4.08481673758436,6.936145476607682,5.893992658005375,5.94753213408528,6.9504625018640045,6.038859963534454,6.013687716561907],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["none"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Youth (13-17)","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#C03A83","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Youth (13-17)","offsetgroup":"Youth (13-17)","orientation":"v","pointpos":0,"showlegend":true,"x":["Youth (13-17)"],"x0":" ","xaxis":"x","y":[3.068135570185539],"y0":" ","yaxis":"y","type":"box"},{"alignmentgroup":"True","boxpoints":"all","customdata":[["none"],["none"],["none"],["none"],["harder to work"],["none"],["none"],["feeling tired"],["lightheaded"],["none"],["none"],["none"],["harder to work"],["harder to work"],["none"]],"fillcolor":"rgba(255,255,255,0)","hoveron":"points","hovertemplate":"\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","legendgroup":"Youth (18-24)","line":{"color":"rgba(255,255,255,0)"},"marker":{"color":"#a62098","size":12,"opacity":0.5,"line":{"width":1.0,"color":"white"}},"name":"Youth (18-24)","offsetgroup":"Youth (18-24)","orientation":"v","pointpos":0,"showlegend":true,"x":["Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)","Youth (18-24)"],"x0":" ","xaxis":"x","y":[3.039435249678573,2.977532846745617,3.075364892319848,2.920073500777849,5.8854508975521265,2.901611486586154,3.053366244143148,6.990850535260333,4.918705226968064,3.000250746024807,2.9165549046511603,3.0471168900186565,5.9870775061377675,5.971445094263156,2.95236290139549],"y0":" ","yaxis":"y","type":"box"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"xaxis":{"anchor":"y","domain":[0.0,1.0],"title":{"text":"Group","font":{"size":16,"color":"gray"},"standoff":20},"categoryorder":"array","categoryarray":["Caregivers","Chronically ill","Coaches","Elders","Teachers","Youth (13-17)","Youth (18-24)"],"tickfont":{"size":12},"tickangle":45,"automargin":true,"zeroline":true},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"Impact","font":{"size":16,"color":"gray"},"standoff":20},"tickfont":{"size":12},"tickvals":[0,1,2,3,4,5,6,7,8],"ticktext":["reduced productivity","pre-existing conditions\u003cbr\u003eworsened","physical discomfort","none","mood changes","lightheaded","harder to work","feeling tired","demotivating"],"showgrid":true,"gridwidth":1,"gridcolor":"rgba(0,0,0,0.1)","zeroline":false,"automargin":true},"legend":{"title":{"text":"Vulnerable group","font":{"size":12,"family":"'Space Grotesk', sans-serif"}},"tracegroupgap":0,"font":{"family":"'Space Grotesk', sans-serif"},"traceorder":"normal"},"margin":{"t":100,"l":170,"r":20,"b":100},"boxmode":"overlay","title":{"font":{"size":18,"family":"'Space Grotesk', sans-serif"},"subtitle":{"font":{"color":"gray","size":16,"family":"'Space Grotesk', sans-serif"},"text":""},"text":"Is heat impacting your job or making it more difficult\u002feasier?","x":0.5,"xanchor":"center"},"coloraxis":{"showscale":false},"font":{"family":"'Space Grotesk', 'Inter', sans-serif"}},                        {"responsive": true}                    )                };                            </script>
+<script type="text/javascript">
+    window.PLOTLYENV = window.PLOTLYENV || {};
+    if (document.getElementById("job_impact_beeswarm")) {
+        Plotly.newPlot(
+            "job_impact_beeswarm",
+            [
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["none"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["physical discomfort"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["none"],
+                        ["harder to work"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["harder to work"],
+                        ["physical discomfort"],
+                        ["feeling tired"],
+                        ["physical discomfort"],
+                        ["pre-existing conditions worsened"],
+                        ["physical discomfort"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["physical discomfort"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["physical discomfort"],
+                        ["harder to work"],
+                        ["harder to work"],
+                    ],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Caregivers",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#fcd225", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Caregivers",
+                    offsetgroup: "Caregivers",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: [
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                        "Caregivers",
+                    ],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [
+                        6.065749451653431, 5.985330825540492, 3.0860635007787316, 6.047368326974247, 5.902602563493036,
+                        6.114149364392821, 6.062673528477685, 4.068655433266469, 1.910747271842131, 6.988092625094936,
+                        5.968991525815819, 3.1024235973236642, 6.03452762881936, 3.077462787184999, 2.9864194077185595,
+                        2.9345372932283467, 6.013100348883801, 1.8953161414650022, 7.07863148127822, 2.0315994557892956,
+                        1.0619410576204897, 1.9650862323511684, 6.112967525854777, 4.094349069117327,
+                        6.0668120392977025, 5.926713289884472, 5.992013040894488, 3.890512903788935, 5.917029478096212,
+                        4.043931748778189, 2.058742917417876, 6.11220233578421, 3.9581980859531565, 1.9689103294483685,
+                        5.992693394706194, 5.925473126180228,
+                    ],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [["none"]],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Chronically ill",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#ffd395", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Chronically ill",
+                    offsetgroup: "Chronically ill",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: ["Chronically ill"],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [2.9111811612805134],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [["physical discomfort"], ["none"]],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Coaches",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#f78410", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Coaches",
+                    offsetgroup: "Coaches",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: ["Coaches", "Coaches"],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [1.994169182294224, 2.934458243772212],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["harder to work"],
+                    ],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Elders",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#d5546e", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Elders",
+                    offsetgroup: "Elders",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: ["Elders", "Elders", "Elders", "Elders", "Elders", "Elders", "Elders", "Elders"],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [
+                        3.0407553587238025, 2.984916460529359, 3.079842767053881, 3.0480636244805397,
+                        2.9549679939316897, 3.0797423523348484, 3.0731434457992326, 5.972994810967242,
+                    ],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["none"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["reduced productivity"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["none"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["none"],
+                        ["mood changes"],
+                        ["demotivating"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["mood changes"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["feeling tired"],
+                        ["harder to work"],
+                        ["harder to work"],
+                    ],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Teachers",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#3e049c", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Teachers",
+                    offsetgroup: "Teachers",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: [
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                        "Teachers",
+                    ],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [
+                        5.949198744943258, 6.043798920953994, 2.9135405960662344, 6.927977968594026, 5.881766944740241,
+                        6.068861850600514, 6.039564205582088, 6.04923969087032, 0.0673749674452723, 6.990139786129202,
+                        6.016497887028694, 6.913551279550638, 5.907487217648634, 4.040416710829713, 2.9930630894743517,
+                        7.015656665555485, 6.063599725779846, 3.032332396800142, 4.012859056157919, 8.014209718578899,
+                        5.9529480235350265, 5.887396280296305, 5.984812173415767, 5.931500321476687, 5.978046874493913,
+                        4.08481673758436, 6.936145476607682, 5.893992658005375, 5.94753213408528, 6.9504625018640045,
+                        6.038859963534454, 6.013687716561907,
+                    ],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [["none"]],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Youth (13-17)",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#C03A83", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Youth (13-17)",
+                    offsetgroup: "Youth (13-17)",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: ["Youth (13-17)"],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [3.068135570185539],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+                {
+                    alignmentgroup: "True",
+                    boxpoints: "all",
+                    customdata: [
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["harder to work"],
+                        ["none"],
+                        ["none"],
+                        ["feeling tired"],
+                        ["lightheaded"],
+                        ["none"],
+                        ["none"],
+                        ["none"],
+                        ["harder to work"],
+                        ["harder to work"],
+                        ["none"],
+                    ],
+                    fillcolor: "rgba(255,255,255,0)",
+                    hoveron: "points",
+                    hovertemplate:
+                        "\u003cb\u003eVulnerable group:\u003c\u002fb\u003e %{x}\u003cbr\u003e\u003cb\u003eJob impact:\u003c\u002fb\u003e %{customdata[0]}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    legendgroup: "Youth (18-24)",
+                    line: { color: "rgba(255,255,255,0)" },
+                    marker: { color: "#a62098", size: 12, opacity: 0.5, line: { width: 1.0, color: "white" } },
+                    name: "Youth (18-24)",
+                    offsetgroup: "Youth (18-24)",
+                    orientation: "v",
+                    pointpos: 0,
+                    showlegend: true,
+                    x: [
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                        "Youth (18-24)",
+                    ],
+                    x0: " ",
+                    xaxis: "x",
+                    y: [
+                        3.039435249678573, 2.977532846745617, 3.075364892319848, 2.920073500777849, 5.8854508975521265,
+                        2.901611486586154, 3.053366244143148, 6.990850535260333, 4.918705226968064, 3.000250746024807,
+                        2.9165549046511603, 3.0471168900186565, 5.9870775061377675, 5.971445094263156, 2.95236290139549,
+                    ],
+                    y0: " ",
+                    yaxis: "y",
+                    type: "box",
+                },
+            ],
+            {
+                template: {
+                    layout: {
+                        colorway: ["#fcd225", "#ffd395", "#f78410", "#d5546e", "#3e049c", "#C03A83", "#a62098"],
+                        font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                    },
+                },
+                xaxis: {
+                    anchor: "y",
+                    domain: [0.0, 1.0],
+                    title: { text: "Group", font: { size: 16, color: "gray" }, standoff: 20 },
+                    categoryorder: "array",
+                    categoryarray: [
+                        "Caregivers",
+                        "Chronically ill",
+                        "Coaches",
+                        "Elders",
+                        "Teachers",
+                        "Youth (13-17)",
+                        "Youth (18-24)",
+                    ],
+                    tickfont: { size: 12 },
+                    tickangle: 45,
+                    automargin: true,
+                    zeroline: true,
+                },
+                yaxis: {
+                    anchor: "x",
+                    domain: [0.0, 1.0],
+                    title: { text: "Impact", font: { size: 16, color: "gray" }, standoff: 20 },
+                    tickfont: { size: 12 },
+                    tickvals: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+                    ticktext: [
+                        "reduced productivity",
+                        "pre-existing conditions\u003cbr\u003eworsened",
+                        "physical discomfort",
+                        "none",
+                        "mood changes",
+                        "lightheaded",
+                        "harder to work",
+                        "feeling tired",
+                        "demotivating",
+                    ],
+                    showgrid: true,
+                    gridwidth: 1,
+                    gridcolor: "rgba(0,0,0,0.1)",
+                    zeroline: false,
+                    automargin: true,
+                },
+                legend: {
+                    title: { text: "Vulnerable group", font: { size: 12, family: "'Space Grotesk', sans-serif" } },
+                    tracegroupgap: 0,
+                    font: { family: "'Space Grotesk', sans-serif" },
+                    traceorder: "normal",
+                },
+                margin: { t: 100, l: 170, r: 20, b: 100 },
+                boxmode: "overlay",
+                title: {
+                    font: { size: 18, family: "'Space Grotesk', sans-serif" },
+                    subtitle: { font: { color: "gray", size: 16, family: "'Space Grotesk', sans-serif" }, text: "" },
+                    text: "Is heat impacting your job<br>or making it more difficult\u002feasier?",
+                    x: 0.5,
+                    xanchor: "center",
+                },
+                coloraxis: { showscale: false },
+                font: { family: "'Space Grotesk', 'Inter', sans-serif" },
+            },
+            { responsive: true }
+        );
+    }
+</script>
+
 
 
 <!-- sunburst_solutions -->
@@ -2407,12 +3212,449 @@
         <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="treemap_solutions" class="plotly-graph-div" style="height:700px; width:1000px;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("treemap_solutions")) {                    Plotly.newPlot(                        "treemap_solutions",                        [{"branchvalues":"total","customdata":[["Sufficient A\u002fC & fans","a\u002fc",31,18.2],["Government regulation","air pollution mitigation",3,1.8],["Access to water","blue space",3,1.8],["Built environment changes","building materials",2,1.2],["Affordable & renewable energy","cheaper electricity",10,5.9],["Access to water","cheaper water",1,0.6],["Community-wide cooling","community action",2,1.2],["Community-wide cooling","cooling centers",6,3.5],["Sufficient A\u002fC & fans","distribution of personal fans",3,1.8],["Access to water","access to water",5,2.9],["Education & awareness","education",3,1.8],["Government regulation","global action",5,2.9],["Government regulation","government action",9,5.3],["Shade & outdoor shelter","green space",15,8.8],["School & work accommodations","increased breaks",1,0.6],["School & work accommodations","indoor gym",3,1.8],["Built environment changes","less cars",2,1.2],["None","none",18,10.6],["Shade & outdoor shelter","preserve trees",5,2.9],["Community-wide cooling","private sector action",1,0.6],["Affordable & renewable energy","renewable energy",4,2.4],["Shade & outdoor shelter","shade shelter",12,7.1],["Shade & outdoor shelter","sheltered bus stops",4,2.4],["School & work accommodations","shortened school days",4,2.4],["Built environment changes","smart architecture",5,2.9],["Affordable & renewable energy","solar electricity",7,4.1],["Built environment changes","spatial planning changes",3,1.8],["School & work accommodations","uniform changes",2,1.2],["Access to water","water use",1,0.6],["Access to water","(?)",10,"(?)"],["Affordable & renewable energy","(?)",21,"(?)"],["Built environment changes","(?)",12,"(?)"],["Community-wide cooling","(?)",9,"(?)"],["Education & awareness","education",3,1.8],["Government regulation","(?)",17,"(?)"],["None","none",18,10.6],["School & work accommodations","(?)",10,"(?)"],["Shade & outdoor shelter","(?)",36,"(?)"],["Sufficient A\u002fC & fans","(?)",34,"(?)"]],"domain":{"x":[0.0,1.0],"y":[0.0,1.0]},"hovertemplate":"\u003cb\u003e%{label}\u003c\u002fb\u003e\u003cbr\u003eResponses: %{value}\u003cbr\u003ePercentage: %{percentRoot:.1%}\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","ids":["Sufficient A\u002fC\u003cbr\u003e& fans\u002fA\u002fc","Government\u003cbr\u003eregulation\u002fAir\u003cbr\u003epollution mitigation","Access\u003cbr\u003eto water\u002fBlue\u003cbr\u003espace","Built\u003cbr\u003eenvironment changes\u002fBuilding\u003cbr\u003ematerials","Affordable &\u003cbr\u003erenewable energy\u002fCheaper\u003cbr\u003eelectricity","Access\u003cbr\u003eto water\u002fCheaper\u003cbr\u003ewater","Community-wide\u003cbr\u003ecooling\u002fCommunity\u003cbr\u003eaction","Community-wide\u003cbr\u003ecooling\u002fCooling\u003cbr\u003ecenters","Sufficient A\u002fC\u003cbr\u003e& fans\u002fDistribution of\u003cbr\u003epersonal fans","Access\u003cbr\u003eto water\u002fDrinking water","Education\u003cbr\u003e& awareness\u002fEducation","Government\u003cbr\u003eregulation\u002fGlobal\u003cbr\u003eaction","Government\u003cbr\u003eregulation\u002fGovernment\u003cbr\u003eaction","Shade &\u003cbr\u003eoutdoor shelter\u002fGreen\u003cbr\u003espace","School &\u003cbr\u003ework accommodations\u002fIncreased\u003cbr\u003ebreaks","School &\u003cbr\u003ework accommodations\u002fIndoor\u003cbr\u003egym","Built\u003cbr\u003eenvironment changes\u002fLess\u003cbr\u003ecars","None\u002fNone","Shade &\u003cbr\u003eoutdoor shelter\u002fPreserve\u003cbr\u003etrees","Community-wide\u003cbr\u003ecooling\u002fPrivate\u003cbr\u003esector action","Affordable &\u003cbr\u003erenewable energy\u002fRenewable\u003cbr\u003eenergy","Shade &\u003cbr\u003eoutdoor shelter\u002fShade\u003cbr\u003eshelter","Shade &\u003cbr\u003eoutdoor shelter\u002fSheltered\u003cbr\u003ebus stops","School &\u003cbr\u003ework accommodations\u002fShortened\u003cbr\u003eschool days","Built\u003cbr\u003eenvironment changes\u002fSmart\u003cbr\u003earchitecture","Affordable &\u003cbr\u003erenewable energy\u002fSolar\u003cbr\u003eelectricity","Built\u003cbr\u003eenvironment changes\u002fSpatial\u003cbr\u003eplanning changes","School &\u003cbr\u003ework accommodations\u002fUniform\u003cbr\u003echanges","Access\u003cbr\u003eto water\u002fWater\u003cbr\u003euse","Access\u003cbr\u003eto water","Affordable &\u003cbr\u003erenewable energy","Built\u003cbr\u003eenvironment changes","Community-wide\u003cbr\u003ecooling","Education\u003cbr\u003e& awareness","Government\u003cbr\u003eregulation","None","School &\u003cbr\u003ework accommodations","Shade &\u003cbr\u003eoutdoor shelter","Sufficient A\u002fC\u003cbr\u003e& fans"],"labels":["A\u002fc","Air\u003cbr\u003epollution mitigation","Blue\u003cbr\u003espace","Building\u003cbr\u003ematerials","Cheaper\u003cbr\u003eelectricity","Cheaper\u003cbr\u003ewater","Community\u003cbr\u003eaction","Cooling\u003cbr\u003ecenters","Distribution of\u003cbr\u003epersonal fans","Drinking water","Education","Global\u003cbr\u003eaction","Government\u003cbr\u003eaction","Green\u003cbr\u003espace","Increased\u003cbr\u003ebreaks","Indoor\u003cbr\u003egym","Less\u003cbr\u003ecars","None","Preserve\u003cbr\u003etrees","Private\u003cbr\u003esector action","Renewable\u003cbr\u003eenergy","Shade\u003cbr\u003eshelter","Sheltered\u003cbr\u003ebus stops","Shortened\u003cbr\u003eschool days","Smart\u003cbr\u003earchitecture","Solar\u003cbr\u003eelectricity","Spatial\u003cbr\u003eplanning changes","Uniform\u003cbr\u003echanges","Water\u003cbr\u003euse","Access\u003cbr\u003eto water","Affordable &\u003cbr\u003erenewable energy","Built\u003cbr\u003eenvironment changes","Community-wide\u003cbr\u003ecooling","Education\u003cbr\u003e& awareness","Government\u003cbr\u003eregulation","None","School &\u003cbr\u003ework accommodations","Shade &\u003cbr\u003eoutdoor shelter","Sufficient A\u002fC\u003cbr\u003e& fans"],"name":"","parents":["Sufficient A\u002fC\u003cbr\u003e& fans","Government\u003cbr\u003eregulation","Access\u003cbr\u003eto water","Built\u003cbr\u003eenvironment changes","Affordable &\u003cbr\u003erenewable energy","Access\u003cbr\u003eto water","Community-wide\u003cbr\u003ecooling","Community-wide\u003cbr\u003ecooling","Sufficient A\u002fC\u003cbr\u003e& fans","Access\u003cbr\u003eto water","Education\u003cbr\u003e& awareness","Government\u003cbr\u003eregulation","Government\u003cbr\u003eregulation","Shade &\u003cbr\u003eoutdoor shelter","School &\u003cbr\u003ework accommodations","School &\u003cbr\u003ework accommodations","Built\u003cbr\u003eenvironment changes","None","Shade &\u003cbr\u003eoutdoor shelter","Community-wide\u003cbr\u003ecooling","Affordable &\u003cbr\u003erenewable energy","Shade &\u003cbr\u003eoutdoor shelter","Shade &\u003cbr\u003eoutdoor shelter","School &\u003cbr\u003ework accommodations","Built\u003cbr\u003eenvironment changes","Affordable &\u003cbr\u003erenewable energy","Built\u003cbr\u003eenvironment changes","School &\u003cbr\u003ework accommodations","Access\u003cbr\u003eto water","","","","","","","","","",""],"values":[31,3,3,2,10,1,2,6,3,5,3,5,9,15,1,3,2,18,5,1,4,12,4,4,5,7,3,2,1,10,21,12,9,3,17,18,10,36,34],"type":"treemap","textfont":{"size":12},"marker":{"line":{"color":"white","width":2}},"textinfo":"label","textposition":"middle center"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"legend":{"tracegroupgap":0},"title":{"text":"What changes would you like to see to help with heat?"},"treemapcolorway":["#0d0887","#46039f","#7201a8","#9c179e","#bd3786","#d8576b","#ed7953","#fb9f3a","#fdca26","#f0f921"],"margin":{"t":80,"l":20,"r":20,"b":20}},                        {"responsive": true}                    )                };                            </script>
 
 <!-- student_impacts -->
-   <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="student_impacts" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("student_impacts")) {                    Plotly.newPlot(                        "student_impacts",                        [{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[52.94117647058824,0.0],"y":["Reduced attention","Reduced attention"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[11.76470588235294,0.0],"y":["Physical discomfort","Physical discomfort"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[8.823529411764707,0.0],"y":["None","None"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[8.823529411764707,0.0],"y":["Mood changes","Mood changes"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[2.941176470588235,100.0],"y":["Lower performance","Lower performance"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[14.705882352941178,0.0],"y":["Hyperactive","Hyperactive"],"type":"scatter"},{"customdata":[[18.0,52.94117647058824],[4.0,11.76470588235294],[3.0,8.823529411764707],[3.0,8.823529411764707],[1.0,2.941176470588235],[5.0,14.705882352941178]],"hovertemplate":"\u003cb\u003eTeachers\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#3e049c","line":{"color":"white","width":2},"size":12},"mode":"markers","name":"Teachers","x":[52.94117647058824,11.76470588235294,8.823529411764707,8.823529411764707,2.941176470588235,14.705882352941178],"y":["Reduced attention","Physical discomfort","None","Mood changes","Lower performance","Hyperactive"],"type":"scatter"},{"customdata":[[0.0,0.0],[0.0,0.0],[0.0,0.0],[0.0,0.0],[2.0,100.0],[0.0,0.0]],"hovertemplate":"\u003cb\u003eCoaches\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#f78410","line":{"color":"white","width":2},"size":12},"mode":"markers","name":"Coaches","x":[0.0,0.0,0.0,0.0,100.0,0.0],"y":["Reduced attention","Physical discomfort","None","Mood changes","Lower performance","Hyperactive"],"type":"scatter"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"annotations":[{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"53%","x":52.94117647058824,"xshift":11,"y":"Reduced attention","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"0%","x":0.0,"xshift":11,"y":"Reduced attention","yshift":-13},{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"12%","x":11.76470588235294,"xshift":11,"y":"Physical discomfort","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"0%","x":0.0,"xshift":11,"y":"Physical discomfort","yshift":-13},{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"9%","x":8.823529411764707,"xshift":11,"y":"None","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"0%","x":0.0,"xshift":11,"y":"None","yshift":-13},{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"9%","x":8.823529411764707,"xshift":11,"y":"Mood changes","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"0%","x":0.0,"xshift":11,"y":"Mood changes","yshift":-13},{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"3%","x":2.941176470588235,"xshift":11,"y":"Lower performance","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"100%","x":100.0,"xshift":11,"y":"Lower performance","yshift":-13},{"font":{"color":"#3e049c","size":10},"showarrow":false,"text":"15%","x":14.705882352941178,"xshift":11,"y":"Hyperactive","yshift":13},{"font":{"color":"#f78410","size":10},"showarrow":false,"text":"0%","x":0.0,"xshift":11,"y":"Hyperactive","yshift":-13}],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12},"title":{"font":{"size":18},"text":"Is heat impacting students' attention or performance?","x":0.5,"xanchor":"center"},"xaxis":{"title":{"font":{"size":14},"text":"Percentage of total responses \u003cbr\u003eTeachers: 34 responses, Coaches: 2 responses"},"range":[-1,101],"ticksuffix":"%","showgrid":true,"gridcolor":"#e5e5e5","zeroline":true,"zerolinecolor":"#333333"},"yaxis":{"tickfont":{"size":12},"title":{"text":""},"showgrid":false,"side":"left","ticklabelstandoff":3},"legend":{"font":{"size":12},"x":0.98,"y":0.98,"xanchor":"right","yanchor":"top","orientation":"v","bgcolor":"rgba(255, 255, 255, 0.8)","bordercolor":"#999999","borderwidth":1},"margin":{"l":150,"r":50,"t":100,"b":100},"plot_bgcolor":"white","hovermode":"closest"},                        {"responsive": true}                    )                };                            </script>
+   <script type="text/javascript">
+    window.PlotlyConfig = { MathJaxConfig: "local" };
+</script>
+<script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<div id="student_impacts" class="plotly-graph-div" style="height: 100%; width: 100%"></div>
+<script type="text/javascript">
+    window.PLOTLYENV = window.PLOTLYENV || {};
+    if (document.getElementById("student_impacts")) {
+        Plotly.newPlot(
+            "student_impacts",
+            [
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [52.94117647058824, 0.0],
+                    y: ["Reduced attention", "Reduced attention"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [11.76470588235294, 0.0],
+                    y: ["Physical discomfort", "Physical discomfort"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [8.823529411764707, 0.0],
+                    y: ["None", "None"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [8.823529411764707, 0.0],
+                    y: ["Mood changes", "Mood changes"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [2.941176470588235, 100.0],
+                    y: ["Lower performance", "Lower performance"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [14.705882352941178, 0.0],
+                    y: ["Hyperactive", "Hyperactive"],
+                    type: "scatter",
+                },
+                {
+                    customdata: [
+                        [18.0, 52.94117647058824],
+                        [4.0, 11.76470588235294],
+                        [3.0, 8.823529411764707],
+                        [3.0, 8.823529411764707],
+                        [1.0, 2.941176470588235],
+                        [5.0, 14.705882352941178],
+                    ],
+                    hovertemplate:
+                        "\u003cb\u003eTeachers\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    marker: { color: "#3e049c", line: { color: "white", width: 2 }, size: 12 },
+                    mode: "markers",
+                    name: "Teachers",
+                    x: [
+                        52.94117647058824, 11.76470588235294, 8.823529411764707, 8.823529411764707, 2.941176470588235,
+                        14.705882352941178,
+                    ],
+                    y: [
+                        "Reduced attention",
+                        "Physical discomfort",
+                        "None",
+                        "Mood changes",
+                        "Lower performance",
+                        "Hyperactive",
+                    ],
+                    type: "scatter",
+                },
+                {
+                    customdata: [
+                        [0.0, 0.0],
+                        [0.0, 0.0],
+                        [0.0, 0.0],
+                        [0.0, 0.0],
+                        [2.0, 100.0],
+                        [0.0, 0.0],
+                    ],
+                    hovertemplate:
+                        "\u003cb\u003eCoaches\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    marker: { color: "#f78410", line: { color: "white", width: 2 }, size: 12 },
+                    mode: "markers",
+                    name: "Coaches",
+                    x: [0.0, 0.0, 0.0, 0.0, 100.0, 0.0],
+                    y: [
+                        "Reduced attention",
+                        "Physical discomfort",
+                        "None",
+                        "Mood changes",
+                        "Lower performance",
+                        "Hyperactive",
+                    ],
+                    type: "scatter",
+                },
+            ],
+            {
+                template: {
+                    layout: {
+                        colorway: ["#fcd225", "#ffd395", "#f78410", "#d5546e", "#3e049c", "#C03A83", "#a62098"],
+                        font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                    },
+                },
+                annotations: [
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "53%",
+                        x: 52.94117647058824,
+                        xshift: 11,
+                        y: "Reduced attention",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "0%",
+                        x: 0.0,
+                        xshift: 11,
+                        y: "Reduced attention",
+                        yshift: -13,
+                    },
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "12%",
+                        x: 11.76470588235294,
+                        xshift: 11,
+                        y: "Physical discomfort",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "0%",
+                        x: 0.0,
+                        xshift: 11,
+                        y: "Physical discomfort",
+                        yshift: -13,
+                    },
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "9%",
+                        x: 8.823529411764707,
+                        xshift: 11,
+                        y: "None",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "0%",
+                        x: 0.0,
+                        xshift: 11,
+                        y: "None",
+                        yshift: -13,
+                    },
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "9%",
+                        x: 8.823529411764707,
+                        xshift: 11,
+                        y: "Mood changes",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "0%",
+                        x: 0.0,
+                        xshift: 11,
+                        y: "Mood changes",
+                        yshift: -13,
+                    },
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "3%",
+                        x: 2.941176470588235,
+                        xshift: 11,
+                        y: "Lower performance",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "100%",
+                        x: 100.0,
+                        xshift: 11,
+                        y: "Lower performance",
+                        yshift: -13,
+                    },
+                    {
+                        font: { color: "#3e049c", size: 10 },
+                        showarrow: false,
+                        text: "15%",
+                        x: 14.705882352941178,
+                        xshift: 11,
+                        y: "Hyperactive",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#f78410", size: 10 },
+                        showarrow: false,
+                        text: "0%",
+                        x: 0.0,
+                        xshift: 11,
+                        y: "Hyperactive",
+                        yshift: -13,
+                    },
+                ],
+                font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                title: {
+                    font: { size: 18 },
+                    text: "Is heat impacting students' attention or performance?",
+                    x: 0.5,
+                    xanchor: "center",
+                },
+                xaxis: {
+                    title: {
+                        font: { size: 14 },
+                        text: "Percentage of total responses \u003cbr\u003eTeachers: 34 responses, Coaches: 2 responses",
+                    },
+                    range: [-1, 101],
+                    ticksuffix: "%",
+                    showgrid: true,
+                    gridcolor: "#e5e5e5",
+                    zeroline: true,
+                    zerolinecolor: "#333333",
+                },
+                yaxis: {
+                    tickfont: { size: 12 },
+                    title: { text: "" },
+                    showgrid: false,
+                    side: "left",
+                    ticklabelstandoff: 3,
+                },
+                legend: {
+                    font: { size: 12 },
+                    x: 0.98,
+                    y: 0.4,
+                    xanchor: "right",
+                    yanchor: "top",
+                    orientation: "v",
+                    bgcolor: "rgba(255, 255, 255, 0.8)",
+                    bordercolor: "#999999",
+                    borderwidth: 1,
+                },
+                margin: { l: 150, r: 50, t: 100, b: 100 },
+                plot_bgcolor: "white",
+                hovermode: "closest",
+            },
+            { responsive: true }
+        );
+    }
+</script>
+
 
 <!-- patient_impacts -->
-    <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
-        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>                <div id="patient_impacts" class="plotly-graph-div" style="height:100%; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("patient_impacts")) {                    Plotly.newPlot(                        "patient_impacts",                        [{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[0,4.166666666666666],"y":["Pre-exiting conditions worsened","Pre-exiting conditions worsened"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[0,12.5],"y":["Pre-existing conditions worsened","Pre-existing conditions worsened"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[0,50.0],"y":["Physical discomfort","Physical discomfort"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[0,20.833333333333336],"y":["None","None"],"type":"scatter"},{"hoverinfo":"skip","line":{"color":"#999999","width":1.5},"mode":"lines","showlegend":false,"x":[0,12.5],"y":["Mood changes","Mood changes"],"type":"scatter"},{"customdata":[[1.0,4.166666666666666],[3.0,12.5],[12.0,50.0],[5.0,20.833333333333336],[3.0,12.5]],"hovertemplate":"\u003cb\u003eCaregivers\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e","marker":{"color":"#fcd225","line":{"color":"white","width":2},"size":12},"mode":"markers","name":"Caregivers","x":[4.166666666666666,12.5,50.0,20.833333333333336,12.5],"y":["Pre-exiting conditions worsened","Pre-existing conditions worsened","Physical discomfort","None","Mood changes"],"type":"scatter"}],                        {"template":{"layout":{"colorway":["#fcd225","#ffd395","#f78410","#d5546e","#3e049c","#C03A83","#a62098"],"font":{"family":"'Space Grotesk', 'Inter', sans-serif","size":12}}},"annotations":[{"font":{"color":"#fcd225","size":10},"showarrow":false,"text":"4%","x":4.166666666666666,"xshift":11,"y":"Pre-exiting conditions worsened","yshift":13},{"font":{"color":"#fcd225","size":10},"showarrow":false,"text":"12%","x":12.5,"xshift":11,"y":"Pre-existing conditions worsened","yshift":13},{"font":{"color":"#fcd225","size":10},"showarrow":false,"text":"50%","x":50.0,"xshift":11,"y":"Physical discomfort","yshift":13},{"font":{"color":"#fcd225","size":10},"showarrow":false,"text":"21%","x":20.833333333333336,"xshift":11,"y":"None","yshift":13},{"font":{"color":"#fcd225","size":10},"showarrow":false,"text":"12%","x":12.5,"xshift":11,"y":"Mood changes","yshift":13}],"title":{"font":{"size":18},"text":"Do you notice your patients having a tougher time during the summer months? If yes, how?","x":0.5,"xanchor":"center","xref":"paper"},"xaxis":{"title":{"font":{"size":14},"text":"Percentage of total responses\u003cbr\u003eCaregivers: 24 responses","standoff":30},"range":[-1,100],"ticksuffix":"%","showgrid":true,"gridcolor":"#e5e5e5","zeroline":true,"zerolinecolor":"#333333","ticklabelstandoff":5},"yaxis":{"tickfont":{"size":12},"title":{"text":""},"showgrid":false,"side":"left","tickmode":"linear","automargin":true,"ticklabelstandoff":10},"legend":{"font":{"size":12},"x":0.98,"y":0.98,"xanchor":"right","yanchor":"top","orientation":"v","bgcolor":"rgba(255, 255, 255, 0.8)","bordercolor":"#999999","borderwidth":1},"margin":{"l":150,"r":50,"t":100,"b":100},"plot_bgcolor":"white","hovermode":"closest"},                        {"responsive": true}                    )                };                            </script>
+    <script type="text/javascript">
+    window.PlotlyConfig = { MathJaxConfig: "local" };
+</script>
+<script charset="utf-8" src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<div id="patient_impacts" class="plotly-graph-div" style="height: 100%; width: 100%"></div>
+<script type="text/javascript">
+    window.PLOTLYENV = window.PLOTLYENV || {};
+    if (document.getElementById("patient_impacts")) {
+        Plotly.newPlot(
+            "patient_impacts",
+            [
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [0, 16.666666666666664],
+                    y: ["Pre-existing<br>conditions worsened", "Pre-existing<br>conditions worsened"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [0, 50.0],
+                    y: ["Physical discomfort", "Physical discomfort"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [0, 20.833333333333336],
+                    y: ["None", "None"],
+                    type: "scatter",
+                },
+                {
+                    hoverinfo: "skip",
+                    line: { color: "#999999", width: 1.5 },
+                    mode: "lines",
+                    showlegend: false,
+                    x: [0, 12.5],
+                    y: ["Mood changes", "Mood changes"],
+                    type: "scatter",
+                },
+                {
+                    customdata: [
+                        [4.0, 16.666666666666664],
+                        [12.0, 50.0],
+                        [5.0, 20.833333333333336],
+                        [3.0, 12.5],
+                    ],
+                    hovertemplate:
+                        "\u003cb\u003eCaregivers\u003c\u002fb\u003e\u003cbr\u003eResponse: %{y}\u003cbr\u003eCount: %{customdata[0]}\u003cbr\u003ePercentage: %{customdata[1]:.0f}%\u003cbr\u003e\u003cextra\u003e\u003c\u002fextra\u003e",
+                    marker: { color: "#fcd225", line: { color: "white", width: 2 }, size: 12 },
+                    mode: "markers",
+                    name: "Caregivers",
+                    x: [16.666666666666664, 50.0, 20.833333333333336, 12.5],
+                    y: ["Pre-existing<br>conditions worsened", "Physical discomfort", "None", "Mood changes"],
+                    type: "scatter",
+                },
+            ],
+            {
+                template: {
+                    layout: {
+                        colorway: ["#fcd225", "#ffd395", "#f78410", "#d5546e", "#3e049c", "#C03A83", "#a62098"],
+                        font: { family: "'Space Grotesk', 'Inter', sans-serif", size: 12 },
+                    },
+                },
+                annotations: [
+                    {
+                        font: { color: "#fcd225", size: 10 },
+                        showarrow: false,
+                        text: "17%",
+                        x: 16.666666666666664,
+                        xshift: 11,
+                        y: "Pre-existing<br>conditions worsened",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#fcd225", size: 10 },
+                        showarrow: false,
+                        text: "50%",
+                        x: 50.0,
+                        xshift: 11,
+                        y: "Physical discomfort",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#fcd225", size: 10 },
+                        showarrow: false,
+                        text: "21%",
+                        x: 20.833333333333336,
+                        xshift: 11,
+                        y: "None",
+                        yshift: 13,
+                    },
+                    {
+                        font: { color: "#fcd225", size: 10 },
+                        showarrow: false,
+                        text: "12%",
+                        x: 12.5,
+                        xshift: 11,
+                        y: "Mood changes",
+                        yshift: 13,
+                    },
+                ],
+                title: {
+                    font: { size: 18 },
+                    text: "Do you notice your patients having<br>a tougher time during the summer months?",
+                    x: 0.5,
+                    xanchor: "center",
+                    xref: "paper",
+                },
+                xaxis: {
+                    title: {
+                        font: { size: 14 },
+                        text: "Percentage of total responses\u003cbr\u003eCaregivers: 24 responses",
+                        standoff: 30,
+                    },
+                    range: [0, 100],
+                    ticksuffix: "%",
+                    showgrid: true,
+                    gridcolor: "#e5e5e5",
+                    zeroline: true,
+                    zerolinecolor: "#333333",
+                    ticklabelstandoff: 5,
+                },
+                yaxis: {
+                    tickfont: { size: 12 },
+                    title: { text: "" },
+                    showgrid: false,
+                    side: "left",
+                    tickmode: "linear",
+                    automargin: true,
+                    ticklabelstandoff: 10,
+                },
+                legend: {
+                    font: { size: 12 },
+                    x: 0.98,
+                    y: 0.98,
+                    xanchor: "right",
+                    yanchor: "top",
+                    orientation: "v",
+                    bgcolor: "rgba(255, 255, 255, 0.8)",
+                    bordercolor: "#999999",
+                    borderwidth: 1,
+                },
+                margin: { l: 150, r: 50, t: 100, b: 100 },
+                plot_bgcolor: "white",
+                hovermode: "closest",
+            },
+            { responsive: true }
+        );
+    }
+</script>
+
 
 
 <!-- vulnerability -->
@@ -2671,7 +3913,7 @@
                     {
                         font: { size: 14, family: "'Space Grotesk', 'Inter', sans-serif"  },
                         showarrow: false,
-                        text: "Teachers: Are there particular students that you think are more affected by heat? Why?",
+                        text: "Teachers: Are there particular students that<br>you think are more affected by heat?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -2682,7 +3924,7 @@
                     {
                         font: { size: 14, family: "'Space Grotesk', 'Inter', sans-serif"  },
                         showarrow: false,
-                        text: "Coaches: Are there particular student athletes that you think are more affected by heat? Why?",
+                        text: "Coaches: Are there particular students that<br>you think are more affected by heat?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -2965,7 +4207,7 @@
                     {
                         font: { size: 14, family: "'Space Grotesk', 'Inter', sans-serif"  },
                         showarrow: false,
-                        text: "Teachers: What are you doing to reduce the impact of heat on your students?",
+                        text: "Teachers: What are you doing to reduce<br>the impact of heat on your students?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -2976,7 +4218,7 @@
                     {
                         font: { size: 14, family: "'Space Grotesk', 'Inter', sans-serif"  },
                         showarrow: false,
-                        text: "Coaches: What are you doing to reduce the impact of heat on student athletes?",
+                        text: "Coaches: What are you doing to reduce<br>the impact of heat on students?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3073,9 +4315,9 @@
                     hovertemplate:
                         "\u003cb\u003eUse of fans\u002fair conditioning\u003c\u002fb\u003e\u003cbr\u003eCount: 19\u003cbr\u003ePercentage: 55.9%\u003cbr\u003e%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e",
                     insidetextanchor: "middle",
-                    legendgroup: "fans/ac",
+                    legendgroup: "Fans/ac",
                     marker: { color: "#fcd225", line: { color: "white", width: 2 } },
-                    name: "fans/ac",
+                    name: "Fans/ac",
                     orientation: "h",
                     showlegend: true,
                     text: "56%",
@@ -3181,7 +4423,7 @@
                     {
                         font: { size: 14 },
                         showarrow: false,
-                        text: "Teachers: What is the school doing to reduce the impact of heat on your students?",
+                        text: "Teachers: What is the school doing to reduce<br>the impact of heat on your students?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3192,7 +4434,7 @@
                     {
                         font: { size: 14 },
                         showarrow: false,
-                        text: "Coaches: What is the school doing to reduce the impact of heat on student athletes?",
+                        text: "Coaches: What is the school doing to reduce<br>the impact of heat on students?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3393,7 +4635,7 @@
                     {
                         font: { size: 14 },
                         showarrow: false,
-                        text: "Are there particular patients that you think are more affected by heat? Why?",
+                        text: "Are there particular patients that you<br>think are more affected by heat?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3408,7 +4650,7 @@
                         x: 0.94,
                         xanchor: "right",
                         xref: "paper",
-                        y: 0.935,
+                        y: 0.89,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -3496,9 +4738,9 @@
                     hovertemplate:
                         "\u003cb\u003eUse of fans\u002fair conditioning\u003c\u002fb\u003e\u003cbr\u003eCount: 20\u003cbr\u003ePercentage: 44.4%\u003cbr\u003e%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e",
                     insidetextanchor: "middle",
-                    legendgroup: "fans/ac",
+                    legendgroup: "Fans/ac",
                     marker: { color: "#2ab07f", line: { color: "white", width: 2 } },
-                    name: "fans/ac",
+                    name: "Fans/ac",
                     orientation: "h",
                     showlegend: true,
                     text: "44%",
@@ -3583,7 +4825,7 @@
                     {
                         font: { size: 14 },
                         showarrow: false,
-                        text: "What is the center doing to reduce the impact of heat for your patients?",
+                        text: "What is the center doing to reduce<br>the impact of heat for your patients?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3598,7 +4840,7 @@
                         x: 0.94,
                         xanchor: "right",
                         xref: "paper",
-                        y: 0.935,
+                        y: 0.89,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -3743,9 +4985,9 @@
                     hovertemplate:
                         "\u003cb\u003eUse of fans\u002fair conditioning\u003c\u002fb\u003e\u003cbr\u003eCount: 6\u003cbr\u003ePercentage: 16.7%\u003cbr\u003e%{customdata}\u003cextra\u003e\u003c\u002fextra\u003e",
                     insidetextanchor: "middle",
-                    legendgroup: "fans/ac",
+                    legendgroup: "Fans/ac",
                     marker: { color: "#b83289", line: { color: "white", width: 2 } },
-                    name: "fans/ac",
+                    name: "Fans/ac",
                     orientation: "h",
                     showlegend: true,
                     text: "17%",
@@ -3809,7 +5051,7 @@
                     {
                         font: { size: 14 },
                         showarrow: false,
-                        text: "What are you doing to reduce the impact of heat for your patients?",
+                        text: "What are you doing to reduce<br>the impact of heat for your patients?",
                         x: 0.5,
                         xanchor: "center",
                         xref: "paper",
@@ -3824,7 +5066,7 @@
                         x: 0.94,
                         xanchor: "right",
                         xref: "paper",
-                        y: 0.935,
+                        y: 0.89,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -4292,7 +5534,7 @@
                     labels: [
                         "physical\u003cbr\u003ediscomfort",
                         "none",
-                        "pre-existing\u003cbr\u003econditions worsened",
+                        "pre-existing\u003cbr\u003econditions<br>worsened",
                         "mood\u003cbr\u003echanges",
                         "feeling\u003cbr\u003etired",
                         "dizziness",
@@ -4336,10 +5578,10 @@
                         "\u003cb\u003ereduce gas cooking\u003c\u002fb\u003e\u003cbr\u003ePercentage: 2%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "hydration",
                         "water use",
-                        "open\u003cbr\u003ewindows\u002fdoors",
+                        "open\u003cbr\u003edoors",
                         "diet",
                         "open\u003cbr\u003ewindows",
                         "home built\u003cbr\u003eon wind",
@@ -4388,7 +5630,7 @@
                         "\u003cb\u003ewater use\u003c\u002fb\u003e\u003cbr\u003ePercentage: 2%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "hydration",
                         "clothing\u003cbr\u003eadjustments",
                         "open\u003cbr\u003ewindows",
@@ -4456,8 +5698,8 @@
                         "finding\u003cbr\u003eshade",
                         "dizziness",
                         "lightheaded",
-                        "pre-existing\u003cbr\u003econditions worsened",
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "pre-existing\u003cbr\u003econditions<br>worsened",
+                        "fans/ac",
                         "walking\u003cbr\u003efaster",
                     ],
                     marker: {
@@ -4566,7 +5808,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -4588,14 +5830,14 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
                     {
                         font: { color: "#777777", family: "'Space Grotesk','Inter',sans-serif", size: 11, weight: "normal" },
                         showarrow: false,
-                        text: "n = 27<br>total responses = 53",
+                        text: "n = 27<br>responses = 53",
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
@@ -4610,7 +5852,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -4632,7 +5874,7 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -4781,7 +6023,7 @@
                         "\u003cb\u003ereduce gas cooking\u003c\u002fb\u003e\u003cbr\u003ePercentage: 3%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "water use",
                         "hydration",
                         "open\u003cbr\u003ewindows\u002fdoors",
@@ -4830,7 +6072,7 @@
                         "\u003cb\u003ewater use\u003c\u002fb\u003e\u003cbr\u003ePercentage: 3%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "clothing\u003cbr\u003eadjustments",
                         "hydration",
                         "open\u003cbr\u003ewindows",
@@ -4892,7 +6134,7 @@
                         "finding\u003cbr\u003eshade",
                         "lightheaded",
                         "pre-existing\u003cbr\u003econditions worsened",
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "walking\u003cbr\u003efaster",
                     ],
                     marker: {
@@ -4983,7 +6225,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5005,7 +6247,7 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5027,7 +6269,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5049,7 +6291,7 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5177,7 +6419,7 @@
                         "\u003cb\u003ewater use\u003c\u002fb\u003e\u003cbr\u003ePercentage: 7%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "hydration",
                         "open\u003cbr\u003ewindows",
                         "open\u003cbr\u003ewindows\u002fdoors",
@@ -5210,7 +6452,7 @@
                         "\u003cb\u003enone\u003c\u002fb\u003e\u003cbr\u003ePercentage: 9%\u003cbr\u003e",
                     ],
                     labels: [
-                        "use of\u003cbr\u003efans\u002fair conditioning",
+                        "fans/ac",
                         "hydration",
                         "open\u003cbr\u003ewindows",
                         "clothing\u003cbr\u003eadjustments",
@@ -5345,7 +6587,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5367,7 +6609,7 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.71,
+                        y: 0.72,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5389,7 +6631,7 @@
                         x: 0.25,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
@@ -5411,7 +6653,7 @@
                         x: 0.75,
                         xanchor: "center",
                         xref: "paper",
-                        y: 0.35,
+                        y: 0.36,
                         yanchor: "top",
                         yref: "paper",
                     },
